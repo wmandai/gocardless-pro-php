@@ -402,9 +402,9 @@ class Client
     {
         $curlinfo = curl_version();
         $uagent = array();
-        $uagent[] = 'gocardless-pro-php/4.6.1';
+        $uagent[] = 'gocardless-pro-php/4.6.2';
         $uagent[] = 'schema-version/2015-07-06';
-        $uagent[] = 'GuzzleHttp/' . \GuzzleHttp\Client::VERSION;
+        $uagent[] = 'GuzzleHttp/7.0';
         $uagent[] = 'php/' . phpversion();
         if (extension_loaded('curl') && function_exists('curl_version')) {
             $uagent[] = 'curl/' . \curl_version()['version'];
